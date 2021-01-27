@@ -33,7 +33,7 @@ public class Task1 {
           for(int i = digitPosition - 1; i > 0; i--){
               if(tmpDigit >= array[i]){
                   tmpDigit -= array[i];
-                  termDigits.add(array[i]);
+                  termDigits.add(i);
               }
               if (tmpDigit == 0){
                   arrayWithIndex = new int[termDigits.size()];
