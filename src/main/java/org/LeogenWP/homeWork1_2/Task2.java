@@ -10,8 +10,6 @@ public class Task2 {
         boolean result;
         result = task2.containsDoubles(array);
         System.out.println(result);
-
-
     }
 
     private boolean containsDoubles(int[] array){
