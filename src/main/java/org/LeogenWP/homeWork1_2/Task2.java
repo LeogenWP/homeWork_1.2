@@ -1,6 +1,7 @@
 package org.LeogenWP.homeWork1_2;
 
 import java.util.HashSet;
+import java.util.Set;
 
 public class Task2 {
 
@@ -13,9 +14,11 @@ public class Task2 {
     }
 
     private boolean containsDoubles(int[] array){
-        HashSet hs = new HashSet();
+        Set hs = new HashSet();
         for (int i : array){
-            hs.add(i);
+            if(!hs.add(i)){
+                return false;
+            }
         }
         return (hs.size() == array.length);
     }
